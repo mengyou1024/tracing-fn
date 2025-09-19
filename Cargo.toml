@@ -1,0 +1,21 @@
+[package]
+name = "tracing-fn"
+version = "0.1.0"
+edition = "2024"
+authors = ["mengyou1024 <mengyou1024@126.com>"]
+description = "该库提供了一个派生宏, 用于追踪函数的调用参数和返回值"
+license = "MIT"
+repository = "https://github.com/mengyou1024/tracing-fn.git"
+keywords = ["tracing"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2.0", features = ["full"] }
+quote = "1.0"
+proc-macro2 = "1.0"
+
+[dev-dependencies]
+tracing = "0.1"
+tracing-subscriber = "0.3"
